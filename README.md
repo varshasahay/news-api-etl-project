@@ -32,3 +32,11 @@ news_api_etl_project/
 └── scripts/ # Python scripts used in ETL
 └── news_api_extract.py
 
+## 🚀 How to Run
+
+1.  **Clone the repository:**
+   ```bash
+   git clone https://github.com/varshasahay/news-api-etl-project.git
+   cd news-api-etl-project
+
+
