@@ -53,5 +53,6 @@ news_api_etl_project/
 > - Docker & Docker Compose installed
 
 ### 🔹 Step 1: Clone the Repository
+```bash
 git clone https://github.com/varshasahay/news_api_etl_project.git
 cd news_api_etl_project
