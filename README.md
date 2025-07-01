@@ -56,3 +56,5 @@ news_api_etl_project/
 ```bash
 git clone https://github.com/varshasahay/news_api_etl_project.git
 cd news_api_etl_project
+docker-compose up --build
+
