@@ -1,53 +1,57 @@
-<<<<<<< HEAD
-# 📰 News API ETL Project
+# 📰 News API ETL Project (Docker + Airflow)
 
-This is a beginner-friendly data engineering project that extracts news articles from the News API, transforms the data using Python, loads it into PostgreSQL, and automates the pipeline using Apache Airflow. The final data is visualized using Jupyter Notebook.
-
----
-
-## 🔧 Tech Stack Used
-
-- **Python**
-- **Apache Airflow**
-- **PostgreSQL**
-- **Jupyter Notebook**
-- **News API**
-- **Pandas**
+This is a beginner-friendly **Data Engineering Project** that builds a complete ETL pipeline using **News API**, **Apache Airflow**, and **PostgreSQL**, all inside **Docker**.  
+The pipeline extracts latest news articles, transforms and cleans the data, loads it into a PostgreSQL database, and visualizes it using Jupyter Notebook.
 
 ---
 
-## 📁 Project Folder Structure
+## 🚀 Tech Stack Used
+
+- 🐍 Python  
+- 🛠️ Apache Airflow  
+- 🐘 PostgreSQL  
+- 🐳 Docker & Docker Compose  
+- 📊 Jupyter Notebook  
+- 🌐 News API  
+- 📦 Pandas, Requests, SQLAlchemy
+
+---
+
+## 📁 Folder Structure
 
 news_api_etl_project/
-├── README.md
-├── dags/ # Airflow DAGs for ETL workflow
-│ └── news_api_etl.py # Main DAG file
+│
+├── dags/ # Airflow DAGs
+│ └── news_api_etl.py
+│
+├── scripts/ # ETL Python scripts
+│ └── news_api_extract.py
+│
 ├── data/ # Raw and cleaned data files
 │ ├── raw_news_data.csv
 │ └── cleaned_news_data.csv
-├── images/ # Screenshots or graphs
-│ └── airflow_dag_graph.png
+│
 ├── notebooks/ # Jupyter notebooks for visualization
 │ └── news-api-graphs.ipynb
-├── requirements.txt # Python dependencies
-└── scripts/ # Python scripts used in ETL
-└── news_api_extract.py
-
-=======
-## 📁 Project Folder Structure
-
-news_api_etl_project/
-├── README.md
-├── dags/ # Airflow DAGs for ETL workflow
-│ └── news_api_etl.py # Main DAG file
-├── data/ # Raw and cleaned data files
-│ ├── raw_news_data.csv
-│ └── cleaned_news_data.csv
-├── images/ # Screenshots or graphs
+│
+├── images/ # Graphs or DAG screenshots
 │ └── airflow_dag_graph.png
-├── notebooks/ # Jupyter notebooks for visualization
-│ └── news-api-graphs.ipynb
+│
 ├── requirements.txt # Python dependencies
-└── scripts/ # Python scripts used in ETL
-└── news_api_extract.py
->>>>>>> 4b7fcf0 (Added folder structure to README)
+├── docker-compose.yml # Docker services
+└── dockerfile # Dockerfile for Airflow image
+
+
+---
+
+
+---
+
+## 🚀 How to Run the Project (Using Docker)
+
+> 📦 **Prerequisites:**
+> - Docker & Docker Compose installed
+
+### 🔹 Step 1: Clone the Repository
+git clone https://github.com/varshasahay/news_api_etl_project.git
+cd news_api_etl_project
